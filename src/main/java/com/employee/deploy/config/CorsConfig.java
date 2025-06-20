@@ -41,7 +41,8 @@ public class CorsConfig {
         // Credentials은 필요한 경우에만
         configuration.setAllowCredentials(true);
         // 필요한 헤더만 허용
-        configuration.setAllowedHeaders(Arrays.asList("Origin", "Content-Type", "Accept", "Authorization"));
+        configuration.setAllowedHeaders(Arrays.asList("Origin", "Content-Type", "Accept",
+                "Authorization", "Access-Control-Allow-Origin"));
         // 필요한 메소드만 허용
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE"));
 
